@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Ollama Explanation</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <h1>
+        🤖 Ollama AI Explanation
+    </h1>
+
+
+    <div class="food-card">
+
+
+        <h2>
+            {{ food_name }}
+        </h2>
+
+
+        <div class="ai-response">
+
+            {{ explanation }}
+
+        </div>
+
+
+    </div>
+
+
+    <a href="/">
+        ← Back to Home
+    </a>
+
+
+</div>
+
+
+</body>
+
+</html>

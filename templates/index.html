@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodMeal AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark">M</div>
+        <div class="brand-text">MoodMeal AI</div>
+      </div>
+
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/chatbot">AI Chat</a>
+        <a href="/history">History</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a class="nav-btn btn-link" href="#planner">Find My Food</a>
+      </div>
+    </header>
+
+    <main class="hero-card reveal-on-scroll">
+      <div class="hero-text">
+        <span class="badge">AI-powered nutrition</span>
+        <h1>Smart meals for every mood.</h1>
+        <p>
+          Discover food suggestions tailored to your emotions, energy level,
+          budget, and routine so every meal feels personal and satisfying.
+        </p>
+
+        <div class="cta-row">
+          <a class="primary-btn btn-link" href="#planner">Find My Food</a>
+          <a class="secondary-btn btn-link" href="/chatbot">AI Chat</a>
+        </div>
+
+        <div class="hero-features">
+          <span>Healthy</span>
+          <span>Balanced</span>
+          <span>Personalized</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="food-card">
+          <div class="food-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="food-preview">
+            <div class="food-emoji">🥗</div>
+            <div class="food-info">
+              <small>Recommended today</small>
+              <h3>Sunny Protein Bowl</h3>
+              <ul>
+                <li>High energy</li>
+                <li>Balanced nutrition</li>
+                <li>Comforting taste</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="image-showcase reveal-on-scroll">
+      <div class="showcase-card tall">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Healthy meal" />
+      </div>
+      <div class="showcase-card">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80" alt="Salad bowl" />
+      </div>
+      <div class="showcase-card">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80" alt="Fresh food" />
+      </div>
+    </section>
+
+    <section class="feature-section reveal-on-scroll">
+      <div class="section-head">
+        <div>
+          <span class="mini-label">Why it works</span>
+          <h2>Made for real-life moods.</h2>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=900&q=80" alt="Mood-based meal" />
+          </div>
+          <div class="feature-content">
+            <h3>Personalized picks</h3>
+            <p>Build meals around your mood, budget, food preference, and activity level.</p>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="Healthy dining" />
+          </div>
+          <div class="feature-content">
+            <h3>Smart nutrition</h3>
+            <p>Balance energy, protein, and comfort without overthinking every meal choice.</p>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80" alt="Food planner" />
+          </div>
+          <div class="feature-content">
+            <h3>Fast planning</h3>
+            <p>Pick a mood and get a recommendation instantly that feels fresh and realistic.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="popular-section reveal-on-scroll" id="meals">
+      <div class="popular-header">
+        <div>
+          <span class="mini-label">Popular meals</span>
+          <h2>Favorites your mood will love.</h2>
+        </div>
+      </div>
+
+      <div class="popular-grid">
+        <article class="meal-item">
+          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80" alt="Sunrise Bowl" />
+          <div class="meal-text">
+            <span class="meal-tag">Happy</span>
+            <h4>Sunrise Bowl</h4>
+            <p>Fresh greens, avocado, and a protein-rich boost.</p>
+          </div>
+        </article>
+
+        <article class="meal-item">
+          <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="Comfort Lentil Bowl" />
+          <div class="meal-text">
+            <span class="meal-tag">Comfort</span>
+            <h4>Comfort Lentil Bowl</h4>
+            <p>Warm grains, lentils, veggies, and a soothing finish.</p>
+          </div>
+        </article>
+
+        <article class="meal-item">
+          <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=900&q=80" alt="Citrus Crunch Plate" />
+          <div class="meal-text">
+            <span class="meal-tag">Energy</span>
+            <h4>Citrus Crunch Plate</h4>
+            <p>Bright, juicy, and light for a productive afternoon.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container reveal-on-scroll" id="planner">
+      <div class="form-panel">
+        <div class="section-title">
+          <span class="mini-label">Meal planner</span>
+          <h2>Tell us your vibe.</h2>
+        </div>
+
+        <form action="/recommend" method="POST" class="meal-form">
+          <div class="form-grid">
+            <div class="field-group">
+              <label for="cuisine">Cuisine</label>
+              <select name="cuisine" id="cuisine">
+                <option>Indian</option>
+                <option>South Indian</option>
+                <option>Continental</option>
+                <option>Chinese</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="meal_type">Meal Type</label>
+              <select name="meal_type" id="meal_type">
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Evening</option>
+                <option>Dinner</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="vegetarian">Vegetarian</label>
+              <select name="vegetarian" id="vegetarian">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="vegan">Vegan</label>
+              <select name="vegan" id="vegan">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="budget">Budget (₹)</label>
+              <input type="number" name="budget" id="budget" value="200" min="50" required />
+            </div>
+
+            <div class="field-group">
+              <label for="spice_level">Spice Level</label>
+              <select name="spice_level" id="spice_level">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="mood">How are you feeling?</label>
+              <select name="mood" id="mood">
+                <option>Happy</option>
+                <option>Sad</option>
+                <option>Stressed</option>
+                <option>Tired</option>
+                <option>Healthy</option>
+                <option>Hungry</option>
+                <option>Neutral</option>
+              </select>
+            </div>
+
+            <div class="field-group full-width">
+              <label for="activity">Activity Level</label>
+              <select name="activity" id="activity">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="primary-btn submit-btn">🔍 Find My Food</button>
+        </form>
+      </div>
+
+      <div class="links">
+        <a href="/chatbot" class="nav-link">🤖 AI Chat</a>
+        <a href="/history" class="nav-link">📊 History</a>
+      </div>
+    </section>
+
+    <div class="cta-banner reveal-on-scroll">
+      <div class="cta-copy">
+        <span class="mini-label">Ready to begin?</span>
+        <h2>Build a better routine, one meal at a time.</h2>
+      </div>
+      <a class="primary-btn" href="#planner">Start now</a>
+    </div>
+
+    <footer class="site-footer">
+      <p>© 2026 MoodMeal AI</p>
+    </footer>
+  </div>
+
+  <a href="/chatbot" class="floating-chatbot" aria-label="Open AI chat">🤖</a>
+
+  <script src="{{ url_for('static', filename='theme.js') }}"></script>
+</body>
+</html>

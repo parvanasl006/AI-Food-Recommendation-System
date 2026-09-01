@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodMeal AI History</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}" />
+</head>
+<body>
+  <div class="page-shell history-page">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark">M</div>
+        <div class="brand-text">MoodMeal AI</div>
+      </div>
+
+      <nav class="navlinks">
+        <a href="/">Home</a>
+        <a href="/chatbot">AI Chat</a>
+        <a href="/history">History</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a class="nav-btn" href="/">Home</a>
+      </div>
+    </header>
+
+    <main class="history-card reveal-on-scroll">
+      <div class="section-title">
+        <span class="mini-label">History</span>
+        <h2>Recent recommendations</h2>
+      </div>
+
+      {% if history %}
+        {% for item in history %}
+          <article class="history-item">
+            <div>
+              <h3>{{ item.meal_name }}</h3>
+              <p>{{ item.summary }}</p>
+            </div>
+            <div class="history-meta">
+              <span>{{ item.timestamp }}</span>
+              <span>{{ item.mood.title() }}</span>
+            </div>
+          </article>
+        {% endfor %}
+      {% else %}
+        <div class="empty-state">
+          No recommendations yet. Generate one from the home page.
+        </div>
+      {% endif %}
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='theme.js') }}"></script>
+</body>
+</html>

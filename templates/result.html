@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodMeal AI Result</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}" />
+</head>
+<body>
+  <div class="page-shell result-page">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark">M</div>
+        <div class="brand-text">MoodMeal AI</div>
+      </div>
+
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="/" class="nav-btn">Home</a>
+      </div>
+    </header>
+
+    <main class="result-card reveal-on-scroll">
+      <span class="badge">Meal recommendation</span>
+
+      {% if result %}
+        <h1>{{ result.meal_name }}</h1>
+        <p>{{ result.summary }}</p>
+
+        <div class="result-meta">
+          <div>
+            <span>Feeling</span>
+            <strong>{{ result.mood.title() }}</strong>
+          </div>
+          <div>
+            <span>Meal</span>
+            <strong>{{ result.meal_type.title() }}</strong>
+          </div>
+          <div>
+            <span>Cuisine</span>
+            <strong>{{ result.cuisine.title() }}</strong>
+          </div>
+          <div>
+            <span>Budget</span>
+            <strong>₹{{ result.budget }}</strong>
+          </div>
+        </div>
+
+        <div class="recommendation-list">
+          <h3>More suggestions</h3>
+          <ul>
+            {% for item in result.recommendations %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="cta-row">
+          <a href="/" class="primary-btn">Generate Another</a>
+          <a href="/history" class="secondary-btn">View History</a>
+        </div>
+      {% else %}
+        <h1>No recommendation found</h1>
+      {% endif %}
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='theme.js') }}"></script>
+</body>
+</html>
