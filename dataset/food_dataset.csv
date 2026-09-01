@@ -1,0 +1,31 @@
+food,cuisine,meal_type,vegetarian,vegan,calories,protein,carbs,fat,price,spice_level,prep_time,health_score,mood,situation,activity
+Idli,South Indian,Breakfast,Yes,Yes,180,6,36,2,50,Low,15,9,Happy,Studying,Low
+Masala Dosa,South Indian,Breakfast,Yes,No,350,8,55,10,80,Medium,20,7,Happy,Relaxing,Medium
+Vegetable Upma,South Indian,Breakfast,Yes,Yes,220,6,38,5,60,Low,15,9,Tired,Studying,Low
+Pongal,South Indian,Breakfast,Yes,Yes,300,8,45,8,70,Low,20,8,Tired,Relaxing,Low
+Poori Masala,South Indian,Breakfast,Yes,No,420,7,60,15,80,Medium,25,5,Happy,Relaxing,Medium
+Vegetable Sandwich,Continental,Evening,Yes,Yes,280,8,40,7,120,Low,10,8,Stressed,Working,Low
+Grilled Sandwich,Continental,Evening,Yes,No,320,12,38,10,150,Medium,15,8,Stressed,Working,Medium
+Paneer Wrap,Indian,Lunch,Yes,No,430,20,45,16,180,Medium,20,8,Happy,Working,High
+Paneer Bowl,Indian,Lunch,Yes,No,420,20,45,15,180,Medium,15,9,Healthy,After Exercise,High
+Vegetable Soup,Continental,Dinner,Yes,Yes,180,5,25,4,100,Low,20,10,Stressed,Relaxing,Low
+Tomato Soup,Continental,Evening,Yes,Yes,150,4,20,3,90,Low,15,10,Sad,Relaxing,Low
+Mushroom Soup,Continental,Dinner,Yes,Yes,170,6,18,5,130,Low,20,9,Tired,Relaxing,Low
+Veg Fried Rice,Chinese,Lunch,Yes,No,400,9,65,10,140,Medium,20,6,Happy,Working,High
+Chicken Fried Rice,Chinese,Lunch,No,No,520,25,65,14,180,Medium,25,6,Hungry,Working,High
+Chicken Biryani,Indian,Lunch,No,No,650,30,75,20,220,High,45,5,Hungry,Celebrating,High
+Veg Biryani,Indian,Lunch,Yes,No,450,10,70,12,160,Medium,40,7,Happy,Celebrating,Medium
+Grilled Chicken,Continental,Dinner,No,No,350,35,5,12,250,Low,25,10,Healthy,After Exercise,High
+Chicken Salad,Continental,Dinner,No,No,300,30,15,10,220,Low,15,10,Healthy,After Exercise,High
+Egg Omelette,Indian,Breakfast,No,No,250,18,5,16,100,Medium,10,8,Tired,Studying,Medium
+Boiled Eggs,Indian,Breakfast,No,No,155,13,1,11,70,Low,10,10,Healthy,After Exercise,High
+Chole Rice,Indian,Lunch,Yes,Yes,480,16,70,10,130,Medium,30,8,Hungry,Working,High
+Rajma Rice,Indian,Lunch,Yes,Yes,450,15,68,8,120,Medium,30,9,Tired,Working,Medium
+Curd Rice,South Indian,Lunch,Yes,No,320,8,48,9,80,Low,10,8,Tired,Relaxing,Low
+Lemon Rice,South Indian,Lunch,Yes,Yes,330,7,55,8,70,Medium,15,7,Happy,Traveling,Medium
+Vegetable Pulao,Indian,Lunch,Yes,Yes,380,9,60,9,120,Low,30,8,Neutral,Working,Medium
+Chapati Vegetable Curry,Indian,Dinner,Yes,Yes,350,10,55,7,100,Medium,25,9,Tired,Relaxing,Medium
+Paneer Tikka,Indian,Evening,Yes,No,300,22,10,18,200,High,25,8,Happy,Celebrating,High
+Fruit Bowl,Healthy,Evening,Yes,Yes,180,3,40,2,120,Low,5,10,Happy,Relaxing,Low
+Oatmeal,Healthy,Breakfast,Yes,Yes,220,7,35,5,100,Low,10,10,Tired,Studying,Low
+Greek Yogurt Bowl,Healthy,Breakfast,Yes,No,200,15,20,5,140,Low,5,10,Healthy,After Exercise,High
